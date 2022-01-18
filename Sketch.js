@@ -8,7 +8,7 @@ var plataforma, solo1;
 var caixa1, caixa2, caixa3, caixa4, caixa5;
 var porco1, porco2;
 var tronco1, tronco2, tronco3, tronco4;
-var bird1, tronco5, elastico;
+var bird1, tronco5, estilingue;
 var fundo;
 
 function preload(){
@@ -42,7 +42,7 @@ function setup() {
 
   bird1 = new Passaro(100,100);
   tronco5 = new Tronco(100,100,150,PI/2);
-  elastico = new Restricao(bird1.body,tronco5.body);
+  estilingue = new Estilingue(bird1.body,tronco5.body);
 
   Engine.run(engine);
 }
@@ -67,7 +67,7 @@ function draw() {
   tronco3.display();
   tronco4.display();
 
-  elastico.display();
+  estilingue.display();
   bird1.display();
   tronco5.display();
 }
